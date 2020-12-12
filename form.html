@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Form</title>
+<link rel="stylesheet" type="text/css" href="styles.css" media="all">
+
+<script type="text/javascript" src="script.js">
+</script>
+
+
+</head>
+
+
+<body>
+
+	<input type="button" name="NewEmp" value="New Employee" onclick="formAppear(); tableHide();"></button><br><br>
+<article id="hello" hidden>
+
+<h1>Add Employee Details</h1>
+
+<form method="POST" name="sample" >
+
+<br>
+	Employee ID: <br><input type="number" name="EmpID"><br><br>
+
+	Name: <br><input type="text" name="name"><br><br>
+
+	Department<br><select name="Dept">
+
+  <option selected>Choose..</option>
+
+  <option value="Accounts">Accounts</option>
+
+  <option value="Manufacturing">Manufacturing</option>
+
+  <option value="HR">HR</option>
+
+  <option value="Management">Management</option>
+
+  <option value="Designing">Designing</option>
+
+        </select><br><br>
+
+	Email ID <br><input type="email" name="emailID" required><br><br>
+
+	Date of Joining(DOJ)<br><input type="date" name="DOJ" required><br><br>
+
+
+	<input type="button" name="add" value="Add Data" onclick="addDetail();"><br>
+
+        <p><input type="reset" value="Reset Values"></p>
+  </form>
+</article>
+
+	<table id="tbl" hidden>
+
+	<thead>
+
+		<tr>
+
+		<th>Employee ID</th>
+
+		<th>Name</th>
+
+		<th>Department</th>
+
+		<th>Email ID</th>
+
+		<th>Date of Joining(DOJ)</th>
+
+		<th>Delete</th>
+	</thead>
+
+	<tbody>
+	</tbody>
+
+	</table>
+
+
+
+</body>
+
+</html>
