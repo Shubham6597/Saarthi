@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -18,21 +18,21 @@
 
 <body>
 
-	<input type="button" name="NewEmp" value="New Employee" onclick="formAppear(); tableHide();"></button><br><br>
+	<input type="button" name="NewEmp" value="New Employee" onclick="formAppear(); tableHide();"><br><br>
 <article id="hello" hidden>
 
 <h1>Add Employee Details</h1>
 
-<form method="POST" name="sample" >
+<form method="POST" name="sample">
 
 <br>
-	Employee ID: <br><input type="number" name="EmpID"><br><br>
+	Employee ID: <br><input type="text" name="EmpID" required><br><br>
 
-	Name: <br><input type="text" name="name"><br><br>
+	Name: <br><input type="text" name="name" required><br><br>
 
-	Department<br><select name="Dept">
+	Department<br><select name="Dept" size="1" required>
 
-  <option selected>Choose..</option>
+  <option selected></option>
 
   <option value="Accounts">Accounts</option>
 
@@ -51,7 +51,7 @@
 	Date of Joining(DOJ)<br><input type="date" name="DOJ" required><br><br>
 
 
-	<input type="button" name="add" value="Add Data" onclick="addDetail();"><br>
+	<input type="button" name="add" value="Add Data" onclick="check();"><br>
 
         <p><input type="reset" value="Reset Values"></p>
   </form>
