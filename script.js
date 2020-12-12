@@ -1,4 +1,3 @@
-﻿
  function addDetail()
 
 	{ formHide();
@@ -56,10 +55,12 @@
 x.parentNode.parentNode.parentNode.removeChild(x.parentNode.parentNode);
 
 }        
+
 function formAppear(){
 document.getElementById('hello').hidden=false;
 
 } 
+
 function formHide(){
 document.getElementById('hello').hidden=true;
 
@@ -72,3 +73,17 @@ function tableHide(){
 	  document.getElementById('tbl').hidden=true;
 
 }
+
+
+
+function check(){
+
+
+if(document.sample.EmpID.value==""||document.sample.name.value==""||document.sample.Dept.value==""||document.sample.emailID.value==""||document.sample.DOJ.value=="")
+{alert("Please fill all the Details");}
+
+else{
+addDetail();
+}
+}
+
