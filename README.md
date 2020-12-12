@@ -1,2 +1,5 @@
 # Saarthi
-The repository is done as for SaarthiInterview Process for Frontend Engineer(Intern).
+
+This repository is uploaded as Assignment for Saarthi Interview Process for Frontend Engineer(Intern).
+
+Technology Used: HTML/CSS/JavaScript
